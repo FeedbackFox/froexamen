@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link href="main.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -19,21 +20,26 @@
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+            <img id="nav-logo" src="resources/images/rga-logo-white.png" alt="rga-logo-white">
             <div class="collapse navbar-collapse" id="navbar-collapse">
-                <div class="navbar-nav ml-auto">
+                <div class="navbar-nav mr-auto">
                     <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link active" href="#"><span class="sr-only"></span></a>
-                    <a class="nav-item nav-link active" href="#"><span class="sr-only"></span></a>
+                    <a class="nav-item nav-link active" href="shop.html">Shop<span class="sr-only"></span></a>
+                    <a class="nav-item nav-link active" href="sell.html">Sell<span class="sr-only"></span></a>
+                    <a class="nav-item nav-link active" href="faq.html">FAQ<span class="sr-only"></span></a>
+                    <a class="nav-item nav-link active" href="contact.html">Contact<span class="sr-only"></span></a>
                 </div>
             </div>
         </nav>
 
         <div id="headercontainer">
-            <h1 id="firstheader">Welcome to Retro Games Arcade!</h1>
+            <div class="header-div">
+                <h1 class="header-text" style="background-color: ">Welcome to Retro Games Arcade!</h1>
+            </div>
+
         </div>
         <div id="landingcarousel" class="carousel slide foxparallax" data-ride="carousel" data-pause="false"
-            data-keyboard="false" data-interval="8000" data-parallaxrate="0.4">
+            data-keyboard="false" data-interval="16000" data-parallaxrate="0.4">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="resources/images/metroid4_10_hd.jpg" alt="First slide">
@@ -50,55 +56,31 @@
     <main>
         <div class="container">
             <div class="row firstrow">
-                <div class="col-md-3 col-xl-2">
-                    filters go here. Will be blue and can become horizontal for mobile devices with a hamburger menu.
+                <div class="col-md-8">
+                    <p class="home-p">"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
                 </div>
-                <div class="col-md-9 col-xl-10">
-                    <div class="row">
-                        <div class="col-md-6 col-xl-4 shop-item">
-                            <div class="card">
-                                <img class="card-img-top"
-                                    src="https://i.ebayimg.com/images/g/fnkAAOSwXitcM-0q/s-l1600.jpg"
-                                    alt="Card image cap">
-                                <h4 class="item-price">$50</h4>
-                                <div class="card-body">
-                                <h2 class="card-title item-title">Megaman 2</h2>
-                                <p class="item-description">Mint Condition, still sealed in box. Contains manual.</p>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-4 shop-item">
-                                <div class="card">
-                                    <img class="card-img-top"
-                                        src="https://i.ebayimg.com/images/g/fnkAAOSwXitcM-0q/s-l1600.jpg"
-                                        alt="Card image cap">
-                                    <h4 class="item-price">$50</h4>
-                                    <div class="card-body">
-                                    <h2 class="card-title item-title">Megaman 2</h2>
-                                    <p class="item-description">Mint Condition, still sealed in box. Contains manual.</p>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xl-4 shop-item">
-                                    <div class="card">
-                                        <img class="card-img-top"
-                                            src="https://i.ebayimg.com/images/g/fnkAAOSwXitcM-0q/s-l1600.jpg"
-                                            alt="Card image cap">
-                                        <h4 class="item-price">$50</h4>
-                                        <div class="card-body">
-                                        <h2 class="card-title item-title">Megaman 2</h2>
-                                        <p class="item-description">Mint Condition, still sealed in box. Contains manual.</p>
-                                    </div>
-                                    </div>
-                                </div>
+                <div class="col-md-4">
+                    <img class="home-img"src="https://images.findagrave.com/photos/2018/323/182272466_34c5f5f0-6224-4e8e-97cb-81f3fbec8abc.jpeg" alt="suzyhanson.jpg">
+                </div>
+                <div class="col-md-4">
+                        <img class="home-img" src="https://s3-eu-west-1.amazonaws.com/smgco-images/images/167/265/medium_73796_4.jpg" alt="console.jpg">
+                        
                     </div>
+                <div class="col-md-8">
+                        <p class="home-p">"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
+                        
+                </div>
+                <div class="col-md-12">
+                    <hr>
+                    <h2 class="home-header"><a href="shop.html">Enter the shop here!</a></h2>
                 </div>
             </div><!-- row -->
         </div><!-- container -->
     </main>
+
     <footer class="footer bg-dark py-4 pb-3">
         <p class="text-center my-0 footer-text">
-            Timo Raterink, © Copyright 2019. All rights reserved.
+            Timo Raterink, © Copyright 2019. All rights reserved. <a href="privacy.html">Privacy Policy</a>
         </p>
     </footer>
 
@@ -111,5 +93,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
+    <script src="scripts/jquery-ui.min.js"></script>
     <script src="scripts/transparentnav.js"></script>
+    <script src="scripts/shopscript.js"></script>
 </body>
