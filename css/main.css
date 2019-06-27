@@ -238,6 +238,8 @@ footer {
   margin-bottom: 2.5vh;
   max-width: 300px;
   height: 425px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-img-top {
@@ -264,6 +266,10 @@ footer {
   border-radius: 10px;
   width: 40%;
   display: inline-block;
+}
+
+.item-title {
+  font-size: 20px;
 }
 
 .item-description {
