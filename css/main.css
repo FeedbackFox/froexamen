@@ -123,6 +123,15 @@ a:link {
   padding-top: 25vh;
 }
 
+.header-text {
+  font-size: 0.9em;
+  z-index: -1;
+}
+
+.home-scroll-div {
+  display: none;
+}
+
 .carousel-item > img {
   width: auto;
   height: 45vh;
@@ -130,7 +139,7 @@ a:link {
 }
 
 #landingcarousel {
-  z-index: -1
+  z-index: -2
 }
 
 html {
@@ -141,6 +150,7 @@ html {
 main {
   background-color: #fff;
   padding-bottom: 60px;
+  z-index: 0;
 }
 
 footer {
@@ -190,8 +200,12 @@ footer {
   z-index: 100;
 }
 
+.modal-dialog {
+  z-index: 100;
+}
+
 .modal-backdrop {
-  z-index: 5;
+  z-index: 3;
 }
 
 .filters-sm-button {
@@ -299,7 +313,8 @@ Homepage
 }
 
 .home-img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 300px;
 }
 
 .home-header {
@@ -328,10 +343,17 @@ Sell page
   text-align: left;
 }
 
-
-
+@media (max-width: 991px) {
+  .firstrow {
+    padding-top: 30px;
+  }
+}
 
 @media (max-width: 767px) {
+
+  .header-text {
+    font-size: 0.7em;
+  }
 
   .carousel-item>img {
     height: 45vh;
@@ -351,7 +373,7 @@ Sell page
     position: -webkit-sticky;
     position: sticky;
     top: 56px;
-    z-index: 100;
+    z-index: 4;
   }
 
   #filters-sm {
@@ -405,5 +427,34 @@ Sell page
 
   .header-text {
     font-size: 0.5em;
+  }
+}
+
+/*Fix for the header text not resizing properly due to the way it's layered onto the carousel*/
+
+@media (max-height: 500px) {
+  .carousel-item>img {
+    height: 100vh;
+  }
+  .header-div {
+    padding-top: 45vh;
+  }
+
+  .home-scroll-div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    height: 10vh;
+    padding: none;
+    z-index: 9;
+    padding-top: 60vh;
+    display: block;
+  }
+
+  .home-scroll-indicator {
+    max-height: 200px;
   }
 }
