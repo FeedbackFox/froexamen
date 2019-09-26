@@ -47,7 +47,7 @@
                 <div class="col-md-3 filter-container">
 
 
-                    <button class="filters-button" data-toggle="collapse" data-target=".collapsible">
+                    <button class="filters-button" id="filters-button" data-toggle="collapse" data-target=".collapsible">
                             <img src="resources/images/filter.png" alt="filter icon">
                             Filters
                     </button>
@@ -57,45 +57,45 @@
                         <h5>Console</h5>
                         <hr>
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="NES-xl">
-                            <label class="custom-control-label noselect" for="NES-xl">NES</label>
+                            <input type="checkbox" class="custom-control-input" id="nes-filter" rel="nes">
+                            <label class="custom-control-label noselect" for="nes-filter">NES</label>
                         </div>
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="SNES-xl">
-                            <label class="custom-control-label noselect" for="SNES-xl">SNES</label>
+                            <input type="checkbox" class="custom-control-input" id="snes-filter" rel="snes">
+                            <label class="custom-control-label noselect" for="snes-filter">SNES</label>
                         </div>
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="N64-xl">
-                            <label class="custom-control-label noselect" for="N64-xl">N64</label>
+                            <input type="checkbox" class="custom-control-input" id="n64-filter" rel="n64">
+                            <label class="custom-control-label noselect" for="n64-filter">N64</label>
                         </div>
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="GameCube-xl">
-                            <label class="custom-control-label noselect" for="GameCube-xl">GameCube</label>
+                            <input type="checkbox" class="custom-control-input" id="gamecube-filter" rel="gamecube">
+                            <label class="custom-control-label noselect" for="gamecube-filter">GameCube</label>
                         </div>
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="Wii-xl">
-                            <label class="custom-control-label noselect" for="Wii-xl">Wii</label>
+                            <input type="checkbox" class="custom-control-input" id="wii-filter" rel="wii">
+                            <label class="custom-control-label noselect" for="wii-filter">Wii</label>
                         </div>
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="GameBoy-xl">
-                            <label class="custom-control-label noselect" for="GameBoy-xl">Game Boy</label>
+                            <input type="checkbox" class="custom-control-input" id="dmg-filter" rel="dmg">
+                            <label class="custom-control-label noselect" for="dmg-filter">Game Boy</label>
                         </div>
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="GBC-xl">
-                            <label class="custom-control-label noselect" for="GBC-xl">GBC</label>
+                            <input type="checkbox" class="custom-control-input" id="gbc-filter" rel="gbc">
+                            <label class="custom-control-label noselect" for="gbc-filter">GBC</label>
                         </div>
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="GBA-xl">
-                            <label class="custom-control-label noselect" for="GBA-xl">GBA</label>
+                            <input type="checkbox" class="custom-control-input" id="gba-filter" rel="gba">
+                            <label class="custom-control-label noselect" for="gba-filter">GBA</label>
                         </div>
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="NDS-xl">
-                            <label class="custom-control-label noselect" for="NDS-xl">NDS</label>
+                            <input type="checkbox" class="custom-control-input" id="nds-filter" rel="nds">
+                            <label class="custom-control-label noselect" for="nds-filter">NDS</label>
                         </div>
                         <hr>
-                        <div class="pricerange-container-xl">
+                        <div class="pricerange-container">
                             <h5>Price range</h5>
-                            <input type="text" class="pricerange-amount" readonly="">
+                            <input type="text" class="pricerange-amount" id="pricerange-amount" readonly="">
                             <div class="slider-range"
                                 class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
                                 <div class="ui-slider-range ui-corner-all ui-widget-header">
@@ -104,25 +104,11 @@
                                 <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span>
                             </div>
                         </div>
-                        <hr>
-                        <h5>Condition</h5>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="MintCondition-xl">
-                            <label class="custom-control-label noselect" for="MintCondition-xl">Mint</label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="NewCondition-xl">
-                            <label class="custom-control-label noselect" for="NewCondition-xl">New</label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="UsedCondition-xl">
-                            <label class="custom-control-label noselect" for="UsedCondition-xl">Used</label>
-                        </div>
                     </div>
                 </div>
                 <div class="col-md-9">
                     <div class="row">
-                        <div class="col-sm-6 col-xl-4 shop-item">
+                        <div class="col-sm-6 col-xl-4 fake-item">
                             <div class="card">
                                 <a title="Link to the selling page" href="sell.html">
                                     <img class="card-img-top"
@@ -137,7 +123,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-xl-4 shop-item">
+                        <div class="col-sm-6 col-xl-4 shop-item nes">
                             <div class="card">
                                 <a title="Link to the shopping cart" href="shoppingcart.html">
                                     <img class="card-img-top"
@@ -154,7 +140,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-xl-4 shop-item">
+                        <div class="col-sm-6 col-xl-4 shop-item snes">
                             <div class="card">
                                 <a title="Link to the shopping cart" href="shoppingcart.html">
                                     <img class="card-img-top"
@@ -171,7 +157,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-xl-4 shop-item">
+                        <div class="col-sm-6 col-xl-4 shop-item nes">
                             <div class="card">
                                 <a title="Link to the shopping cart" href="shoppingcart.html">
                                     <img class="card-img-top"
@@ -188,7 +174,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-xl-4 shop-item">
+                        <div class="col-sm-6 col-xl-4 shop-item dmg">
                             <div class="card">
                                 <a title="Link to the shopping cart" href="shoppingcart.html">
                                     <img class="card-img-top"
@@ -205,7 +191,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-xl-4 shop-item">
+                        <div class="col-sm-6 col-xl-4 shop-item dmg">
                             <div class="card">
                                 <a title="Link to the shopping cart" href="shoppingcart.html">
                                     <img class="card-img-top" src="https://i.ytimg.com/vi/RWP9Joc-Ia4/maxresdefault.jpg"
@@ -222,7 +208,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-xl-4 shop-item">
+                        <div class="col-sm-6 col-xl-4 shop-item snes">
                             <div class="card">
                                 <a title="Link to the shopping cart" href="shoppingcart.html">
                                     <img class="card-img-top"
