@@ -13,7 +13,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
-    <link rel="shortcut icon" type="image/x-icon" href="resources/images/favicon.ico"/>
+    <link rel="shortcut icon" type="image/x-icon" href="resources/images/favicon.ico" />
 </head>
 
 <body>
@@ -25,20 +25,22 @@
             </button>
             <img id="nav-logo" src="resources/images/rga-logo-white.png" alt="rga-logo-white">
             <div class="collapse navbar-collapse" id="navbar-collapse">
-                    <div class="navbar-nav mr-auto">
-                            <a class="nav-item nav-link active" title="Link to the homepage" href="index.html">Home <span
-                                    class="sr-only">(current)</span></a>
-                            <a class="nav-item nav-link active" title="Link to the shop" href="shop.html">Shop<span class="sr-only"></span></a>
-                            <a class="nav-item nav-link active" title="Link to the selling page" href="sell.html">Sell<span class="sr-only"></span></a>
-                            <a class="nav-item nav-link active" title="Link to the faq" href="faq.html">FAQ<span class="sr-only"></span></a>
-                            <a class="nav-item nav-link active" title="Link to the contact page" href="contact.html">Contact<span class="sr-only"></span></a>
-                        </div>
+                <div class="navbar-nav mr-auto">
+                    <a class="nav-item nav-link active" title="Link to the homepage" href="index.html">Home <span
+                            class="sr-only"></span></a>
+                    <a class="nav-item nav-link active" title="Link to the shop" href="shop.html">Shop<span
+                            class="sr-only"></span></a>
+                    <a class="nav-item nav-link active" title="Link to the selling page" href="sell.html">Sell<span
+                            class="sr-only"></span></a>
+                    <a class="nav-item nav-link active" title="Link to the faq" href="faq.html">FAQ<span
+                            class="sr-only"></span></a>
+                    <a class="nav-item nav-link active" title="Link to the contact page"
+                        href="contact.html">Contact<span class="sr-only"></span></a>
+                </div>
             </div>
         </nav>
-        
     </header>
     <main>
-        
         <div class="container">
             <h3 class="text-header"><strong>Retro Games Catalog</strong></h3>
             <div class="row">
@@ -48,114 +50,97 @@
                             <img src="resources/images/filter.png" alt="filter icon">
                             Filters
                         </button>
-                        <!-- Modal -->
-                        
-
-
-
-
-
-
-
-
-
-
-                    </div>
-                    <div class="modal fade" id="filterModal" tabindex="-1" role="dialog"
-                            aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Filters</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
+                        <div class="modal fade" id="filterModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Filters</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body text-left">
+                                    <h5>Name</h5>
+                                    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                                    <hr>
+                                    <h5>Console</h5>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="NES-sm">
+                                        <label class="custom-control-label noselect" for="NES-sm">NES</label>
                                     </div>
-                                    <div class="modal-body text-left">
-                                        <h5>Name</h5>
-                                        <input class="form-control" type="text" placeholder="Search"
-                                            aria-label="Search">
-                                        <hr>
-                                        <h5>Console</h5>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="NES-sm">
-                                            <label class="custom-control-label noselect" for="NES-sm">NES</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="SNES-sm">
-                                            <label class="custom-control-label noselect" for="SNES-sm">SNES</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="N64-sm">
-                                            <label class="custom-control-label noselect" for="N64-sm">N64</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="GameCube-sm">
-                                            <label class="custom-control-label noselect"
-                                                for="GameCube-sm">GameCube</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="Wii-sm">
-                                            <label class="custom-control-label noselect" for="Wii-sm">Wii</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="GameBoy-sm">
-                                            <label class="custom-control-label noselect" for="GameBoy-sm">Game
-                                                Boy</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="GBC-sm">
-                                            <label class="custom-control-label noselect" for="GBC-sm">GBC</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="GBA-sm">
-                                            <label class="custom-control-label noselect" for="GBA-sm">GBA</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="NDS-sm">
-                                            <label class="custom-control-label noselect" for="NDS-sm">NDS</label>
-                                        </div>
-                                        <hr>
-                                        <div class="pricerange-container-xl">
-                                            <label for="pricerange-amount-xl">Price range</label>
-                                            <input type="text" class="pricerange-amount" readonly="" style="">
-                                            <div class="slider-range"
-                                                class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
-                                                <div class="ui-slider-range ui-corner-all ui-widget-header">
-                                                </div>
-                                                <span tabindex="0"
-                                                    class="ui-slider-handle ui-corner-all ui-state-default"></span>
-                                                <span tabindex="0"
-                                                    class="ui-slider-handle ui-corner-all ui-state-default"></span>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="SNES-sm">
+                                        <label class="custom-control-label noselect" for="SNES-sm">SNES</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="N64-sm">
+                                        <label class="custom-control-label noselect" for="N64-sm">N64</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="GameCube-sm">
+                                        <label class="custom-control-label noselect" for="GameCube-sm">GameCube</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="Wii-sm">
+                                        <label class="custom-control-label noselect" for="Wii-sm">Wii</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="GameBoy-sm">
+                                        <label class="custom-control-label noselect" for="GameBoy-sm">Game
+                                            Boy</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="GBC-sm">
+                                        <label class="custom-control-label noselect" for="GBC-sm">GBC</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="GBA-sm">
+                                        <label class="custom-control-label noselect" for="GBA-sm">GBA</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="NDS-sm">
+                                        <label class="custom-control-label noselect" for="NDS-sm">NDS</label>
+                                    </div>
+                                    <hr>
+                                    <div class="pricerange-container-xl">
+                                        <label for="pricerange-amount-xl">Price range</label>
+                                        <input type="text" class="pricerange-amount" readonly="" style="">
+                                        <div class="slider-range"
+                                            class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                                            <div class="ui-slider-range ui-corner-all ui-widget-header">
                                             </div>
-                                        </div>
-                                        <hr>
-                                        <h5>Condition</h5>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="MintCondition-xl">
-                                            <label class="custom-control-label noselect"
-                                                for="MintCondition-xl">Mint</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="NewCondition-xl">
-                                            <label class="custom-control-label noselect"
-                                                for="NewCondition-xl">New</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="UsedCondition-xl">
-                                            <label class="custom-control-label noselect"
-                                                for="UsedCondition-xl">Used</label>
+                                            <span tabindex="0"
+                                                class="ui-slider-handle ui-corner-all ui-state-default"></span>
+                                            <span tabindex="0"
+                                                class="ui-slider-handle ui-corner-all ui-state-default"></span>
                                         </div>
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Save
-                                            changes</button>
+                                    <hr>
+                                    <h5>Condition</h5>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="MintCondition-xl">
+                                        <label class="custom-control-label noselect" for="MintCondition-xl">Mint</label>
                                     </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="NewCondition-xl">
+                                        <label class="custom-control-label noselect" for="NewCondition-xl">New</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="UsedCondition-xl">
+                                        <label class="custom-control-label noselect" for="UsedCondition-xl">Used</label>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Save
+                                        changes</button>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    </div>
+                    
                     <div class="filters-xl">
                         <h3><strong>Filters</strong></h3>
                         <hr>
@@ -227,13 +212,12 @@
                 </div>
                 <div class="col-md-9">
                     <div class="row">
-                        <div class="col-md-6 col-xl-4 shop-item">
+                        <div class="col-sm-6 col-xl-4 shop-item">
                             <div class="card">
                                 <a title="Link to the selling page" href="sell.html">
                                     <img class="card-img-top"
                                         src="https://www.pixilart.com/images/art/f1e65dd24607f2f.png"
-                                        alt="Card image cap"
-                                        title="shop item">
+                                        alt="Card image cap" title="shop item">
                                     <h4 class="item-price">$??</h4>
                                     <div class="card-body">
                                         <h2 class="card-title item-title">Got an item for sale?</h2>
@@ -243,13 +227,12 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-6 col-xl-4 shop-item">
+                        <div class="col-sm-6 col-xl-4 shop-item">
                             <div class="card">
                                 <a title="Link to the shopping cart" href="shoppingcart.html">
                                     <img class="card-img-top"
                                         src="https://i.ebayimg.com/images/g/fnkAAOSwXitcM-0q/s-l1600.jpg"
-                                        alt="Card image cap"
-                                        title="shop item">
+                                        alt="Card image cap" title="shop item">
                                     <h4 class="item-price">$50</h4>
                                     <div class="card-body">
                                         <h2 class="card-title item-title">Megaman 2</h2>
@@ -261,87 +244,86 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-6 col-xl-4 shop-item">
+                        <div class="col-sm-6 col-xl-4 shop-item">
                             <div class="card">
                                 <a title="Link to the shopping cart" href="shoppingcart.html">
                                     <img class="card-img-top"
                                         src="https://i.ebayimg.com/images/i/332412097964-0-1/s-l1000.jpg"
-                                        alt="Card image cap"
-                                        title="shop item">
+                                        alt="Card image cap" title="shop item">
                                     <h4 class="item-price">$15</h4>
                                     <div class="card-body">
                                         <h2 class="card-title item-title">Donkey Kong Country</h2>
                                         <h5 class="item-type SNES">SNES</h5>
-                                        <p class="item-description">Loose cartridge. Slight scratches on plastic and sticker only visible when in certain light.
+                                        <p class="item-description">Loose cartridge. Slight scratches on plastic and
+                                            sticker only visible when in certain light.
                                         </p>
                                     </div>
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-6 col-xl-4 shop-item">
+                        <div class="col-sm-6 col-xl-4 shop-item">
                             <div class="card">
                                 <a title="Link to the shopping cart" href="shoppingcart.html">
                                     <img class="card-img-top"
                                         src="https://sites.create-cdn.net/siteimages/38/1/2/381289/12/8/2/12824159/458x500.jpg?1468842595"
-                                        alt="Card image cap"
-                                        title="shop item">
+                                        alt="Card image cap" title="shop item">
                                     <h4 class="item-price">$10</h4>
                                     <div class="card-body">
                                         <h2 class="card-title item-title">Super Mario Bros. & Duck Hunt</h2>
                                         <h5 class="item-type NES">NES</h5>
-                                        <p class="item-description">Loose cartridge. Sticker slightly damaged, cartridge itself in good shape.
+                                        <p class="item-description">Loose cartridge. Sticker slightly damaged, cartridge
+                                            itself in good shape.
                                         </p>
                                     </div>
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-6 col-xl-4 shop-item">
+                        <div class="col-sm-6 col-xl-4 shop-item">
                             <div class="card">
                                 <a title="Link to the shopping cart" href="shoppingcart.html">
                                     <img class="card-img-top"
                                         src="https://i.pinimg.com/originals/41/a0/80/41a08072b98792ca1b9500dc57309779.jpg"
-                                        alt="Card image cap"
-                                        title="shop item">
+                                        alt="Card image cap" title="shop item">
                                     <h4 class="item-price">$50</h4>
                                     <div class="card-body">
                                         <h2 class="card-title item-title">Super Mario Land</h2>
                                         <h5 class="item-type DMG">DMG</h5>
-                                        <p class="item-description">Includes box, manual and poster, as well as original game case. All except cartridge slightly aged, box has low-medium wear. 
+                                        <p class="item-description">Includes box, manual and poster, as well as original
+                                            game case. All except cartridge slightly aged, box has low-medium wear.
                                         </p>
                                     </div>
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-6 col-xl-4 shop-item">
+                        <div class="col-sm-6 col-xl-4 shop-item">
                             <div class="card">
                                 <a title="Link to the shopping cart" href="shoppingcart.html">
-                                    <img class="card-img-top"
-                                        src="https://i.ytimg.com/vi/RWP9Joc-Ia4/maxresdefault.jpg"
-                                        alt="Card image cap"
-                                        title="shop item">
+                                    <img class="card-img-top" src="https://i.ytimg.com/vi/RWP9Joc-Ia4/maxresdefault.jpg"
+                                        alt="Card image cap" title="shop item">
                                     <h4 class="item-price">$250</h4>
                                     <div class="card-body">
                                         <h2 class="card-title item-title">Pokémon Red Version</h2>
                                         <h5 class="item-type DMG">DMG</h5>
                                         <p class="item-description">Mint Condition, still sealed in box. Contains
-                                            manual as well as original DMG game case. Shipped in big box with a lot of protection to avoid damage.
+                                            manual as well as original DMG game case. Shipped in big box with a lot of
+                                            protection to avoid damage.
                                         </p>
                                     </div>
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-6 col-xl-4 shop-item">
+                        <div class="col-sm-6 col-xl-4 shop-item">
                             <div class="card">
                                 <a title="Link to the shopping cart" href="shoppingcart.html">
                                     <img class="card-img-top"
                                         src="https://i.pinimg.com/originals/19/3c/a5/193ca511c11ab03e2609c2a41aaa3747.jpg"
-                                        alt="Card image cap"
-                                        title="shop item">
+                                        alt="Card image cap" title="shop item">
                                     <h4 class="item-price">$15</h4>
                                     <div class="card-body">
                                         <h2 class="card-title item-title">Super Mario World - PAL</h2>
                                         <h5 class="item-type SNES">SNES</h5>
-                                        <p class="item-description">No box or manual included. Sticker slightly damaged around sides and heavily scratched (although not torn.)
+                                        <p class="item-description">No box or manual included. Sticker slightly damaged
+                                            around sides and heavily scratched (although not torn.)
                                         </p>
                                     </div>
                                 </a>
@@ -356,7 +338,8 @@
 
     <footer class="footer bg-dark py-4 pb-3">
         <p class="text-center my-0 footer-text">
-            Timo Raterink, © Copyright 2019. All rights reserved. <a title="Link to privacy policy" href="privacy.html">Privacy Policy</a>
+            Timo Raterink, © Copyright 2019. All rights reserved. <a title="Link to privacy policy"
+                href="privacy.html">Privacy Policy</a>
         </p>
     </footer>
 
