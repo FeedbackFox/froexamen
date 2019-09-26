@@ -24,3 +24,8 @@ $(document).ready(function () {
 
     });
 });
+
+//Filters
+$(document).ready(function () {
+    
+});

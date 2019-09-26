@@ -83,6 +83,16 @@
                 </div>
             </div><!-- row -->
         </div><!-- container -->
+
+        <button data-toggle="collapse" data-target="#collapsible">Show/Hide</button>
+<div class="collapse in" id="collapsible">
+    Content Here.
+</div>
+<div class="visible-xs" id="xs-check"></div>
+<script>
+if( $("#xs-check").is(":visible") )
+    $("#collapsible").removeClass("in");
+</script>
     </main>
 
     <footer class="footer bg-dark py-4 pb-3">

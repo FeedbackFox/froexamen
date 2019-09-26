@@ -45,105 +45,15 @@
             <h3 class="text-header"><strong>Retro Games Catalog</strong></h3>
             <div class="row">
                 <div class="col-md-3 filter-container">
-                    <div id="filters-sm">
-                        <button type="button" class="filters-sm-button" data-toggle="modal" data-target="#filterModal">
+
+
+                    <button class="filters-button" data-toggle="collapse" data-target=".collapsible">
                             <img src="resources/images/filter.png" alt="filter icon">
                             Filters
-                        </button>
-                        <div class="modal fade" id="filterModal" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Filters</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body text-left">
-                                    <h5>Name</h5>
-                                    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-                                    <hr>
-                                    <h5>Console</h5>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="NES-sm">
-                                        <label class="custom-control-label noselect" for="NES-sm">NES</label>
-                                    </div>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="SNES-sm">
-                                        <label class="custom-control-label noselect" for="SNES-sm">SNES</label>
-                                    </div>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="N64-sm">
-                                        <label class="custom-control-label noselect" for="N64-sm">N64</label>
-                                    </div>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="GameCube-sm">
-                                        <label class="custom-control-label noselect" for="GameCube-sm">GameCube</label>
-                                    </div>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="Wii-sm">
-                                        <label class="custom-control-label noselect" for="Wii-sm">Wii</label>
-                                    </div>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="GameBoy-sm">
-                                        <label class="custom-control-label noselect" for="GameBoy-sm">Game
-                                            Boy</label>
-                                    </div>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="GBC-sm">
-                                        <label class="custom-control-label noselect" for="GBC-sm">GBC</label>
-                                    </div>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="GBA-sm">
-                                        <label class="custom-control-label noselect" for="GBA-sm">GBA</label>
-                                    </div>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="NDS-sm">
-                                        <label class="custom-control-label noselect" for="NDS-sm">NDS</label>
-                                    </div>
-                                    <hr>
-                                    <div class="pricerange-container-xl">
-                                        <label for="pricerange-amount-xl">Price range</label>
-                                        <input type="text" class="pricerange-amount" readonly="" style="">
-                                        <div class="slider-range"
-                                            class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
-                                            <div class="ui-slider-range ui-corner-all ui-widget-header">
-                                            </div>
-                                            <span tabindex="0"
-                                                class="ui-slider-handle ui-corner-all ui-state-default"></span>
-                                            <span tabindex="0"
-                                                class="ui-slider-handle ui-corner-all ui-state-default"></span>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <h5>Condition</h5>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="MintCondition-xl">
-                                        <label class="custom-control-label noselect" for="MintCondition-xl">Mint</label>
-                                    </div>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="NewCondition-xl">
-                                        <label class="custom-control-label noselect" for="NewCondition-xl">New</label>
-                                    </div>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="UsedCondition-xl">
-                                        <label class="custom-control-label noselect" for="UsedCondition-xl">Used</label>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Save
-                                        changes</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                    
-                    <div class="filters-xl">
-                        <h3><strong>Filters</strong></h3>
-                        <hr>
+                    </button>
+                    <div class="filters collapse collapsible">
+                        <h3 class="mobile-hidden"><strong>Filters</strong></h3>
+                        <hr class="mobile-hidden">
                         <h5>Console</h5>
                         <hr>
                         <div class="custom-control custom-checkbox">
@@ -185,7 +95,7 @@
                         <hr>
                         <div class="pricerange-container-xl">
                             <h5>Price range</h5>
-                            <input type="text" class="pricerange-amount" readonly="" style="color: black;">
+                            <input type="text" class="pricerange-amount" readonly="">
                             <div class="slider-range"
                                 class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
                                 <div class="ui-slider-range ui-corner-all ui-widget-header">
