@@ -204,6 +204,14 @@ footer {
   background-color: rgba(0, 0, 0, 0);
 }
 
+.ui-slider-range {
+  background-color: #fff;
+}
+
+.slider-range {
+  background-color: #b5b5b5;
+}
+
 .card {
   margin-bottom: 2.5vh;
   max-width: 300px;
@@ -339,7 +347,6 @@ Sell page
 
   .filters-button {
     display: inline-block;
-    
   }
   
   hr {
@@ -354,6 +361,10 @@ Sell page
     max-height: calc(100vh - 96px);
     overflow-y: auto;
     border-top: 1px solid rgba(255,255,255,.5);
+  }
+
+  .custom-checkbox:hover {
+    color: rgb(0, 0, 0);
   }
 
   .collapsing {
