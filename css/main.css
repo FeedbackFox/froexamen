@@ -256,14 +256,17 @@ footer {
 
 .NES {
   background-color: red;
+  color: white;
 }
 
 .SNES {
   background-color: purple;
+  color: white;
 }
 
 .DMG {
   background-color: grey;
+  color: white;
 }
 
 
